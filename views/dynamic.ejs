@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Dynamic Data</title>
+</head>
+<body>
+    <h1>Dynamic Data from Database</h1>
+    <ul>
+        <!-- Boucle pour afficher les données de la base de données -->
+        <% data.forEach(function(item) { %>
+            <li>Name: <%= item.name %>, Email: <%= item.email %></li>
+        <% }); %>
+    </ul>
+    <a href="/">Go Back</a>
+</body>
+</html>
