@@ -1,14 +1,14 @@
 // models/Data.js
 const mongoose = require("mongoose");
 
-// Définition du schéma des données
+// Data schema definition
 const dataSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
 });
 
-// Création du modèle basé sur le schéma
+// Creating a model based on the schema
 const Data = mongoose.model("Data", dataSchema);
 
-// Exportation du modèle pour une utilisation dans d'autres fichiers
+// Exporting the model for use in other files
 module.exports = Data;
